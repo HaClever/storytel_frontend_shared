@@ -1,5 +1,5 @@
 {
-  "name": "storytel_frontend_shared_stack",
+  "name": "storytel_frontend_shared",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
