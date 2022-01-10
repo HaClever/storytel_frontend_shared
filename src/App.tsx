@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className="page-container">
-      <h1>Привет Storytel!</h1>
+      <h1 className="font-semibold text-2xl">Привет Storytel!</h1>
       <input type="text" />
       <input type="radio" name="sdfdd" id="2" />
       <input type="checkbox" name="sdf" id="3" />

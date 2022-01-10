@@ -21,6 +21,7 @@ const storytelColors = {
 };
 
 const storytelUiPlugin = plugin(function ({
+  addBase,
   addVariant,
   addComponents,
   theme,
@@ -57,6 +58,34 @@ const storytelUiPlugin = plugin(function ({
   };
 
   addComponents(components);
+
+  const baseStyles = {
+    "@font-face": [
+      {
+        fontFamily: "StorytelEuclid",
+        src: "url(assets/fonts/StorytelEuclid-Regular-Cyrillic.woff2)",
+        fontWeight: 400,
+        fontStyle: "normal",
+        fontDisplay: "swap",
+      },
+      {
+        fontFamily: "StorytelEuclid",
+        src: "url(assets/fonts/StorytelEuclid-Medium-Cyrillic.woff2)",
+        fontWeight: 500,
+        fontStyle: "normal",
+        fontDisplay: "swap",
+      },
+      {
+        fontFamily: "StorytelEuclid",
+        src: "url(assets/fonts/StorytelEuclid-Semibold-Cyrillic.woff2)",
+        fontWeight: 600,
+        fontStyle: "normal",
+        fontDisplay: "swap",
+      },
+    ],
+  };
+
+  addBase(baseStyles);
 });
 
 /** @type {import('tailwindcss/tailwind-config').TailwindConfig} */
